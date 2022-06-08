@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arina.session1.Controllers.ScreenController">
+   <children>
+      <ToolBar prefHeight="99.0" prefWidth="600.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#toLogin" prefHeight="26.0" prefWidth="192.0" text="Выход" />
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="341.0" text="Время">
+               <padding>
+                  <Insets left="200.0" />
+               </padding>
+            </Label>
+            <Label fx:id="timer" alignment="CENTER_RIGHT" text="(Время)" textAlignment="RIGHT" />
+        </items>
+      </ToolBar>
+      <HBox prefHeight="203.0" prefWidth="600.0" style="-fx-background-color: #CDCDCD;">
+         <children>
+            <ImageView fx:id="imageProfile" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="5.0" prefWidth="390.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="fioField" text="ФИО" />
+                  <Label text="Вход выполнен" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#getBio" prefHeight="26.0" prefWidth="89.0" text="Готово">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#generateReport" prefHeight="26.0" prefWidth="90.0" text="Отчёт">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
